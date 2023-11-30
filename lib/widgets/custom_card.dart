@@ -13,8 +13,8 @@ class CustomCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Get.to(Drugs());
-         Navigator(  );
+        Get.to(const Drugs());
+        const Navigator();
       },
       child: const Card(
         color: Color.fromARGB(255, 245, 241, 248),
@@ -46,5 +46,3 @@ class CustomCard extends StatelessWidget {
     );
   }
 }
-
-

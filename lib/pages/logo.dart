@@ -5,10 +5,12 @@ import 'package:repopharma_app/widgets/custom_elevatedButton.dart';
 //import 'login_page.dart';
 
 class LogoPage extends StatelessWidget {
+  const LogoPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffe4f6fd),
+      backgroundColor: const Color(0xffe4f6fd),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Center(
           child: Image.asset(

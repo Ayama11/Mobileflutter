@@ -12,7 +12,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // AppBar
-      backgroundColor: Color(0xffe4f6fd),
+      backgroundColor: const Color(0xffe4f6fd),
 
       appBar: AppBar(
         elevation: 0,
@@ -20,13 +20,16 @@ class Homepage extends StatelessWidget {
         title: const Text(
           'Gategory',
           style:
-          TextStyle(fontSize: 18, color: Color.fromARGB(255, 63, 63, 63)),
+              TextStyle(fontSize: 18, color: Color.fromARGB(255, 63, 63, 63)),
         ),
         backgroundColor: const Color(0xff7d8ce9),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.search,size: 28,),
+            icon: const Icon(
+              Icons.search,
+              size: 28,
+            ),
             color: Colors.white,
           ),
         ],
@@ -34,10 +37,9 @@ class Homepage extends StatelessWidget {
 
       //*****  Drawer         **** */
       drawer: Drawer(
-
         width: 220,
-        backgroundColor:  Color(0xffb8d9ee),
-        elevation:0 ,
+        backgroundColor: const Color(0xffb8d9ee),
+        elevation: 0,
         child: Container(
           padding: const EdgeInsets.all(8),
           child: ListView(
@@ -47,24 +49,36 @@ class Homepage extends StatelessWidget {
               ),
               ListTile(
                 title: const Text('My Profile'),
-                leading: const Icon(Iconsax.profile_circle5,size: 30,),
+                leading: const Icon(
+                  Iconsax.profile_circle5,
+                  size: 30,
+                ),
                 onTap: () {
                   // Get.to( );
                 },
               ),
               ListTile(
                 title: const Text('Change Language'),
-                leading: const Icon(Iconsax.language_square5,size: 30,),
+                leading: const Icon(
+                  Iconsax.language_square5,
+                  size: 30,
+                ),
                 onTap: () {},
               ),
               ListTile(
                 title: const Text('Dark Mode'),
-                leading: const Icon(Iconsax.moon5,size: 30,),
+                leading: const Icon(
+                  Iconsax.moon5,
+                  size: 30,
+                ),
                 onTap: () {},
               ),
               ListTile(
                 title: const Text('Log Out'),
-                leading: const Icon(Iconsax.logout_15,size: 30,),
+                leading: const Icon(
+                  Iconsax.logout_15,
+                  size: 30,
+                ),
                 onTap: () {},
               ),
             ],

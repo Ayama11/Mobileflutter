@@ -5,7 +5,6 @@ import 'package:repopharma_app/pages/login.dart';
 import 'package:repopharma_app/pages/logo.dart';
 import 'package:repopharma_app/widgets/navigetion_mune.dart';
 
-
 void main() {
   runApp(const RepoPharma());
 }
@@ -18,13 +17,14 @@ class RepoPharma extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: [
-        GetPage(name: "/LoginPage", page:()=>LoginPage()),
-        GetPage(name: "/LogoPage", page:()=>LogoPage()),
-        GetPage(name: "/Homepage", page:()=>Homepage()),
-        GetPage(name: "/NavigationMuneBottom", page:()=>NavigationMuneBottom())
-
+        GetPage(name: "/LoginPage", page: () => const LoginPage()),
+        GetPage(name: "/LogoPage", page: () => const LogoPage()),
+        GetPage(name: "/Homepage", page: () => const Homepage()),
+        GetPage(
+            name: "/NavigationMuneBottom",
+            page: () => const NavigationMuneBottom())
       ],
-      home: LogoPage(),
+      home: const LogoPage(),
     );
   }
 }

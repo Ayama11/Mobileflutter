@@ -12,13 +12,13 @@ class NavigationMuneBottom extends StatelessWidget {
     final NavigationController controller = Get.put(NavigationController());
     return Scaffold(
       bottomNavigationBar: Obx(
-            () => NavigationBar(
+        () => NavigationBar(
           backgroundColor: Colors.white,
           elevation: 0,
           height: 65,
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) =>
-          controller.selectedIndex.value = index,
+              controller.selectedIndex.value = index,
           destinations: const [
             NavigationDestination(
               icon: Icon(Iconsax.home),

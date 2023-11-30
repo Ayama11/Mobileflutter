@@ -6,26 +6,27 @@ class CustomTextField extends StatelessWidget {
   String? hintText;
   IconData? icons;
   TextInputType? typeKey;
-  CustomTextField({this.hintText, this.icons,@required this.typeKey});
+  CustomTextField(
+      {super.key, this.hintText, this.icons, @required this.typeKey});
 
   @override
   Widget build(BuildContext context) {
     return TextField(
-      keyboardType:typeKey ,
+      keyboardType: typeKey,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(199),
-          borderSide: BorderSide(color: Color(0xffd6d9f1),width: 3.5),
+          borderSide: const BorderSide(color: Color(0xffd6d9f1), width: 3.5),
         ),
         hintText: hintText,
-        hintStyle: TextStyle(color:Color(0xffa795c5) ,fontSize: 16),
-       border: OutlineInputBorder(
-         borderRadius: BorderRadius.circular(199),
+        hintStyle: const TextStyle(color: Color(0xffa795c5), fontSize: 16),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(199),
         ),
         prefixIcon: Icon(
           icons,
-          color:Color(0xffec98ea),
-          size:   29,
+          color: const Color(0xffec98ea),
+          size: 29,
         ),
       ),
     );

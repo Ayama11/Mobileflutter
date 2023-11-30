@@ -12,7 +12,7 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xffe4f6fd),
+      backgroundColor: const Color(0xffe4f6fd),
       body: ListView(
         children: [
           const SizedBox(
@@ -37,7 +37,7 @@ class RegisterPage extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Text(
+                    const Text(
                       'Register',
                       style: TextStyle(
                         fontFamily: 'PTSerif-Regular',
@@ -59,7 +59,6 @@ class RegisterPage extends StatelessWidget {
                       hintText: 'E-Phone',
                       icons: Icons.phone,
                       typeKey: TextInputType.number,
-
                     ),
                     const SizedBox(
                       height: 20,
@@ -90,11 +89,13 @@ class RegisterPage extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 12,),
+          const SizedBox(
+            height: 12,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Already have an account ? ',
                 style: TextStyle(
                     fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
@@ -103,9 +104,9 @@ class RegisterPage extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Get.off(LoginPage());
+                  Get.off(const LoginPage());
                 },
-                child: Text(
+                child: const Text(
                   'Login ',
                   style: TextStyle(
                       fontFamily: 'PTSerif-Regular',

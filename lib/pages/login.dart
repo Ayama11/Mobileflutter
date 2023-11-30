@@ -6,10 +6,12 @@ import '../widgets/custom_elevatedButton.dart';
 import '../widgets/custom_textField.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xffe4f6fd),
+      backgroundColor: const Color(0xffe4f6fd),
       body: ListView(
         children: [
           const SizedBox(height: 50),
@@ -32,7 +34,7 @@ class LoginPage extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Text(
+                    const Text(
                       'Login',
                       style: TextStyle(
                         fontFamily: 'PTSerif-Regular',
@@ -62,7 +64,6 @@ class LoginPage extends StatelessWidget {
                       getPage: '/NavigationMuneBottom',
                       text: 'Login',
                       width: 200,
-
                     ),
                     const SizedBox(
                       height: 20,
@@ -72,12 +73,13 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
-      const SizedBox(
-        height: 12,),
+          const SizedBox(
+            height: 12,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Dont have an account ? ',
                 style: TextStyle(
                   fontFamily: 'PPlayfairDisplay-SemiBoldItalic',
@@ -88,10 +90,10 @@ class LoginPage extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   Get.off(
-                    RegisterPage(),
+                    const RegisterPage(),
                   );
                 },
-                child: Text(
+                child: const Text(
                   'Register ',
                   style: TextStyle(
                     fontFamily: 'PTSerif-Regular',
