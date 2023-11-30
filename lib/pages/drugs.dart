@@ -5,15 +5,17 @@ class Drugs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color.fromARGB(255, 149, 203, 247),
-      height: 300,
-      width: 300,
-      child: const Center(
-          child: Text(
-            'durg',
-            style: TextStyle(fontSize: 20, color: Colors.red),
-          )),
+    return Scaffold(
+      body: Container(
+        color: const Color.fromARGB(255, 149, 203, 247),
+        height: 300,
+        width: 300,
+        child: const Center(
+            child: Text(
+          'durg',
+          style: TextStyle(fontSize: 20, color: Colors.red),
+        )),
+      ),
     );
   }
 }
